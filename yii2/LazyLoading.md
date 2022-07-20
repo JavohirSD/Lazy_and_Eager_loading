@@ -80,3 +80,68 @@
     4   My title 004   1       2022-07-20 12:15:01     2022-07-20 12:15:01   3
     5   My title 005   1       2022-07-20 12:15:01     2022-07-20 12:15:01   4
 ```
+
+
+|      NEWS OBJECT AFTER QUERY   |  |
+|-----------------------------------------------------------------------------------------------------------------------|--|
+|  
+```
+Array
+(
+    [0] => backend\models\News Object
+        (
+            [id] => 1
+            [title] => My title 001
+            [status] => 1
+            [category_id] => 1
+            [created_date] => 2022-07-20 14:12:00
+            [updated_date] => 2022-07-20 12:14:36
+            [category] => Array
+                (
+                    [id] => 1
+                    [title] => Category 001
+                    [status] => 1
+                    [created_date] => 2022-07-20 12:14:36
+                    [updated_date] => 2022-07-20 12:14:36
+                )
+
+        )
+
+        [1] => backend\models\News Object
+        (
+            [id] => 2
+            [title] => My title 002
+            [status] => 1
+            [category_id] => 1
+            [created_date] => 2022-07-20 14:12:00
+            [updated_date] => 2022-07-20 12:14:36
+            [category] => Array
+                (
+                    [id] => 1
+                    [title] => Category 002
+                    [status] => 1
+                    [created_date] => 2022-07-20 12:14:36
+                    [updated_date] => 2022-07-20 12:14:36
+                )
+
+        )
+        
+        [2] => backend\models\News Object
+        (
+            [id] => 3
+            [title] => My title 003
+            [status] => 1
+            [category_id] => 1
+            [created_date] => 2022-07-20 14:12:00
+            [updated_date] => 2022-07-20 12:14:36
+            [category] => Array
+                (
+                    [id] => 1
+                    [title] => Category 003
+                    [status] => 1
+                    [created_date] => 2022-07-20 12:14:36
+                    [updated_date] => 2022-07-20 12:14:36
+                )
+        )
+)
+.....
