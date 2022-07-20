@@ -21,7 +21,7 @@
 |    newsView.php    |  |
 |-----------------------------------------------------------------------------------------------------------------------|--|
 |                                                                                                                       |  |
-
+```html
     <table class="table table-bordered">
         <tr>
             <th>Post</th>
@@ -34,33 +34,34 @@
         </tr>
         <?php } ?>
     </table>
-
+```
 
 |     NewsModel.php  |  |
 |-----------------------------------------------------------------------------------------------------------------------|--|
 |                                                                                                                       |  |
-
+```php
     public function getCategory(): \yii\db\ActiveQuery
     {
       return $this->hasOne(Categories::class, ['id' => 'category_id']);
     }
+```
 
 |      SQL QUERIES DEBUG    |  |
 |-----------------------------------------------------------------------------------------------------------------------|--|
 |                                                                                                                       |  |
-
+```sql
     SELECT * FROM `news`
     SELECT * FROM `categories` WHERE `id`=1
     SELECT * FROM `categories` WHERE `id`=2
     SELECT * FROM `categories` WHERE `id`=3
     SELECT * FROM `categories` WHERE `id`=4
-
+```
 
 
 |      DB STRUCTURE DEBUG    |  |
 |-----------------------------------------------------------------------------------------------------------------------|--|
 |                                                                                                                       |  |
-
+```sql
     SELECT * FROM `categories`
     id  title          status  created_date            updated_date       
     1   Category 001   1       2022-07-20 12:14:36     2022-07-20 12:14:36
@@ -78,3 +79,4 @@
     3   My title 003   1       2022-07-20 12:15:01     2022-07-20 12:15:01   2
     4   My title 004   1       2022-07-20 12:15:01     2022-07-20 12:15:01   3
     5   My title 005   1       2022-07-20 12:15:01     2022-07-20 12:15:01   4
+```
