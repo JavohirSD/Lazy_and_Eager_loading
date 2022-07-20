@@ -19,15 +19,15 @@
 ```php
     public function index(): Renderable
     {
-        $news = Blog::with('category')->get();
+        $news = News::with('category')->get();
 
-        return view('home', [
+        return view('newsBlade', [
             'news' => $news
         ]);
     }
 ```
 
-|    newsView.php    |  |
+|    newsBlade.php    |  |
 |-----------------------------------------------------------------------------------------------------------------------|--|
 |                                                                                                                       |  |
 ```html
