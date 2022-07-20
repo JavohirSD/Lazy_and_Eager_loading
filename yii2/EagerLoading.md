@@ -1,3 +1,5 @@
+1. Loads all news from DB with single query.
+2. Loads each category from DB with separate query
 
 |     NewsModel.php  |  |
 |-----------------------------------------------------------------------------------------------------------------------|--|
