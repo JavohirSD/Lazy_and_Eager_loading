@@ -4,7 +4,7 @@
  Blog::factory(10000)->create();
 ```
 
-2. Test iteration with query builder's ```all()``` method.&nbsp;
+2. Test iteration with query builder's ```all()``` method.<br/>;
    This method keeps all retreived data in memory then iterates through them.
 &nbsp;
 Memory usage: 43 Mb.
