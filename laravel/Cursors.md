@@ -4,6 +4,7 @@
  Blog::factory(10000)->create();
 ```
 
+<br/><br/>
 2. Iteration with query builder's ```all()``` method.<br/>
    This method keeps all retreived data in memory then iterates through them.
 <br/>
@@ -19,7 +20,7 @@ $blog = Blog::all()->filter(function ($model){
     }
 ```
 
-
+<br/><br/>
 3. Iteration with query builder's ```cursor()``` method: <br/>
    This method keeps one eloquent model in memory at a time, and removes it after iteration. <br/>
 
@@ -34,7 +35,7 @@ $blog = Blog::cursor()->filter(function ($model){
         echo $b->id . ' - ';
     }
 ```
-
+<br/><br/>
 4. For both case only one query will be executed:
 
 ```sql 
