@@ -4,9 +4,9 @@
  Blog::factory(10000)->create();
 ```
 
-2. Test iteration with query builder's ```all()``` method.<br/>;
+2. Test iteration with query builder's ```all()``` method.<br/>
    This method keeps all retreived data in memory then iterates through them.
-&nbsp;
+<br/>
 Memory usage: 43 Mb.
 
 ```php 
@@ -20,8 +20,8 @@ $blog = Blog::all()->filter(function ($model){
 ```
 
 
-3. Test iteration with query builder's ```cursor()``` method: &nbsp;
-   This method keeps one eloquent model in memory at a time, and removes it after iteration. &nbsp;
+3. Test iteration with query builder's ```cursor()``` method: <br/>
+   This method keeps one eloquent model in memory at a time, and removes it after iteration. <br/>
 
 Memory usage: 23 Mb.
 
